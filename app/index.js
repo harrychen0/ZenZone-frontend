@@ -2,6 +2,7 @@
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import DataScreen from "./DataScreen";
+import GoalsScreen from "./GoalsScreen";
 import { HomeStack } from "./HomeScreen";
 import Icon from "react-native-vector-icons/Ionicons";
 
@@ -17,6 +18,8 @@ const App = () => {
             iconName = focused ? "home" : "home-outline";
           } else if (route.name === "Data") {
             iconName = focused ? "list" : "list-outline";
+          } else if (route.name === "Goals") {
+            iconName = focused ? "trophy" : "trophy-outline";
           }
           return <Icon name={iconName} size={size} color={color} />;
         },
@@ -38,6 +41,7 @@ const App = () => {
         }}
       />
       <Tab.Screen name="Data" component={DataScreen} />
+      <Tab.Screen name="Goals" component={GoalsScreen} />
     </Tab.Navigator>
   );
 };
