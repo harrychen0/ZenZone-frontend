@@ -2,8 +2,8 @@
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import DataScreen from "./DataScreen";
-import GoalsScreen from "./GoalsScreen";
-import { HomeStack } from "./HomeScreen";
+import { GoalsHomeStack } from "./GoalsHomeScreen";
+import { JournalHomeStack } from "./JournalHomeScreen";
 import Icon from "react-native-vector-icons/Ionicons";
 
 const Tab = createBottomTabNavigator();
@@ -14,7 +14,7 @@ const App = () => {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
-          if (route.name === "Home") {
+          if (route.name === "Journal") {
             iconName = focused ? "home" : "home-outline";
           } else if (route.name === "Data") {
             iconName = focused ? "list" : "list-outline";
@@ -34,14 +34,20 @@ const App = () => {
       })}
     >
       <Tab.Screen
-        name="Home"
-        component={HomeStack}
+        name="Journal"
+        component={JournalHomeStack}
         options={{
           headerShown: false,
         }}
       />
       <Tab.Screen name="Data" component={DataScreen} />
-      <Tab.Screen name="Goals" component={GoalsScreen} />
+      <Tab.Screen
+        name="Goals"
+        component={GoalsHomeStack}
+        options={{
+          headerShown: false,
+        }}
+      />
     </Tab.Navigator>
   );
 };

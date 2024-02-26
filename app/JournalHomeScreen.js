@@ -5,7 +5,7 @@ import EntryDetailScreen from "./EntryDetailScreen";
 
 const Stack = createNativeStackNavigator();
 
-export const HomeStack = () => {
+export const JournalHomeStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Intro" component={IntroScreen} />
@@ -15,8 +15,8 @@ export const HomeStack = () => {
   );
 };
 
-const HomeScreen = () => {
-  return <HomeStack />;
+const JournalHomeScreen = () => {
+  return <JournalHomeStack />;
 };
 
-export default HomeScreen;
+export default JournalHomeScreen;

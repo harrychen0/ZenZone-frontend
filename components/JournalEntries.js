@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-const EntryList = ({ entries }) => {
+const JournalEntries = ({ entries }) => {
   const navigation = useNavigation();
   return (
     <View>
@@ -45,4 +45,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default EntryList;
+export default JournalEntries;

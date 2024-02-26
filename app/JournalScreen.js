@@ -10,7 +10,7 @@ import {
   ScrollView,
   Modal,
 } from "react-native";
-import EntryList from "../components/EntryList";
+import JournalEntries from "../components/JournalEntries";
 
 export default function JournalScreen() {
   // Define state variables for the title, entries, and modal visibility
@@ -72,7 +72,7 @@ export default function JournalScreen() {
 
         {/* List of Journal Entries */}
         <View style={styles.spacer}></View>
-        <EntryList entries={entries} />
+        <JournalEntries entries={entries} />
 
         {/* Modal Form to Submit Entry */}
         <Modal

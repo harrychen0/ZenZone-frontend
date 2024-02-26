@@ -37,11 +37,9 @@ const EntryDetailScreen = ({ route, navigation }) => {
         throw new Error("HTTP status " + response.status);
       }
 
-      setIsModalVisible(false);
       navigation.goBack();
     } catch (error) {
       console.error(error);
-      // You might want to handle the error more gracefully in a real app
     }
   };
 
@@ -66,7 +64,6 @@ const EntryDetailScreen = ({ route, navigation }) => {
             navigation.goBack();
           } catch (error) {
             console.error(error);
-            // You might want to handle the error more gracefully in a real app
           }
         },
       },
