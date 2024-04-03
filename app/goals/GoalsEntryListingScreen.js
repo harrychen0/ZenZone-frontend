@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from "react-native";
 
-const GoalsScreen = () => {
+const GoalsEntryListingScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Goals</Text>
@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default GoalsScreen;
+export default GoalsEntryListingScreen;

@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/Ionicons";
 
-export default function IntroScreen() {
+export default function JournalIntroScreen() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>

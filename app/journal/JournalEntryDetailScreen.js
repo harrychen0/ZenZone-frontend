@@ -10,7 +10,7 @@ import {
 import React, { useState } from "react";
 import { SERVER_URL } from "@env";
 
-const EntryDetailScreen = ({ route, navigation }) => {
+const JournalEntryDetailScreen = ({ route, navigation }) => {
   const { entry } = route.params;
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [title, setTitle] = useState(entry.title);
@@ -166,4 +166,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default EntryDetailScreen;
+export default JournalEntryDetailScreen;

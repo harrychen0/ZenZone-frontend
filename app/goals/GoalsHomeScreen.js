@@ -1,12 +1,15 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import GoalsScreen from "./GoalsScreen";
+import GoalsEntryListingScreen from "./GoalsEntryListingScreen";
 
 const Stack = createNativeStackNavigator();
 
 export const GoalsHomeStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Goals" component={GoalsScreen} />
+      <Stack.Screen
+        name="GoalsEntryListing"
+        component={GoalsEntryListingScreen}
+      />
     </Stack.Navigator>
   );
 };

@@ -10,9 +10,9 @@ import {
   ScrollView,
   Modal,
 } from "react-native";
-import JournalEntries from "../components/JournalEntries";
+import JournalEntries from "../../components/JournalEntries";
 
-export default function JournalScreen() {
+export default function JournalEntryListingScreen() {
   // Define state variables for the title, entries, and modal visibility
   const [title, setTitle] = useState("");
   const [entries, setEntries] = useState([]);

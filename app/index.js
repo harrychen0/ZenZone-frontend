@@ -1,9 +1,9 @@
 // Home page for the app: holds the bottom tabs for Home and Data screens (WIP). More screens can be added here for the tab.
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import DataScreen from "./DataScreen";
-import { GoalsHomeStack } from "./GoalsHomeScreen";
-import { JournalHomeStack } from "./JournalHomeScreen";
+import DataScreen from "./data/DataScreen";
+import { GoalsHomeStack } from "./goals/GoalsHomeScreen";
+import { JournalHomeStack } from "./journal/JournalHomeScreen";
 import Icon from "react-native-vector-icons/Ionicons";
 
 const Tab = createBottomTabNavigator();
