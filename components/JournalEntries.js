@@ -14,7 +14,7 @@ const JournalEntries = ({ entries }) => {
           <Pressable
             key={index}
             style={styles.entry}
-            onPress={() => navigation.navigate("EntryDetail", { entry })}
+            onPress={() => navigation.navigate("JournalEntryDetail", { entry })}
           >
             <Text style={styles.title}>
               {new Date(entry.timestamp).toLocaleString()}

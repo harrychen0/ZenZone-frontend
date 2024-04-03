@@ -1,5 +1,4 @@
 //Home screen for the main app. This is the first screen that the user sees when they open the app. It has a button to navigate to the Journal screen.
-
 import { StyleSheet, Text, View, Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/Ionicons";
@@ -18,7 +17,7 @@ export default function JournalIntroScreen() {
       <View style={{ height: 50 }} />
 
       {/* Button to go to Journal Page */}
-      <Pressable onPress={() => navigation.navigate("Journal")}>
+      <Pressable onPress={() => navigation.navigate("JournalEntryListing")}>
         <View style={styles.button}>
           <Text style={styles.link}>Get Started </Text>
           <Icon name="arrow-forward" size={36} color="#ffffff" />
